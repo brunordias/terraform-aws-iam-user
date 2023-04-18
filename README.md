@@ -37,6 +37,8 @@ No modules.
 | <a name="input_keys"></a> [keys](#input\_keys) | Create keys for the user. | `bool` | `true` | no |
 | <a name="input_login_profile"></a> [login\_profile](#input\_login\_profile) | Create access to AWS web console. | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | The IAM user's name. | `string` | n/a | yes |
+| <a name="input_password_length"></a> [password\_length](#input\_password\_length) | The length of the generated password | `number` | `20` | no |
+| <a name="input_password_reset_required"></a> [password\_reset\_required](#input\_password\_reset\_required) | Whether the user should be forced to reset the generated password on first login. | `bool` | `true` | no |
 | <a name="input_pgp_key"></a> [pgp\_key](#input\_pgp\_key) | Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Used to encrypt password and access key. | `string` | `""` | no |
 | <a name="input_policies"></a> [policies](#input\_policies) | Attach this policies (ARN) to IAM user. | `list(any)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources. | `map(string)` | `{}` | no |

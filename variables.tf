@@ -44,3 +44,15 @@ variable "create" {
   default     = true
   description = "Whether to create the IAM User."
 }
+
+variable "password_reset_required" {
+  description = "Whether the user should be forced to reset the generated password on first login."
+  type        = bool
+  default     = true
+}
+
+variable "password_length" {
+  description = "The length of the generated password"
+  type        = number
+  default     = 20
+}
