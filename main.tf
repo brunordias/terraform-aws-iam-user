@@ -1,7 +1,8 @@
 resource "aws_iam_user" "this" {
-  count = var.create == true ? 1 : 0
-  name  = var.name
-  tags  = var.tags
+  count         = var.create == true ? 1 : 0
+  name          = var.name
+  force_destroy = var.force_destroy
+  tags          = var.tags
 }
 
 resource "aws_iam_access_key" "this" {
